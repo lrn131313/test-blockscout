@@ -1,0 +1,4 @@
+# Replace with your domain. Caddy obtains the TLS certificate automatically.
+explorer.yourdomain.com {
+    reverse_proxy localhost:8080
+}
