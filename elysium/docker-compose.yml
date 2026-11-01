@@ -48,6 +48,7 @@ services:
       ETHEREUM_JSONRPC_FALLBACK_HTTP_URL: ${RPC_FALLBACK_URL:-https://rpc.stockium.fun}
       ETHEREUM_JSONRPC_TRACE_URL: ${RPC_URL:-https://rpc.chainzy.io}
       DATABASE_URL: postgresql://blockscout:${DB_PASSWORD:-blockscout}@db:5432/blockscout?sslmode=disable
+      API_RATE_LIMIT_DISABLED: ${API_RATE_LIMIT_DISABLED:-false}
       SECRET_KEY_BASE: ${SECRET_KEY_BASE:-56NtB48ear7+wMSf0IQuWDAAazhpb31qyc7GiyspBP2vh7t5zlCsF5QDv76chXeN}
     volumes:
       - backend-dets:/app/dets/
